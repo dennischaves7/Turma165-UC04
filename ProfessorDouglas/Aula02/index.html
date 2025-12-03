@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+</head>
+
+<body>
+    <script>
+        let num1 = Number(prompt('Digite uma nota'))
+
+        let num2 = Number(prompt('Digite outra nota'))
+
+        let media = (num1 + num2) / 2
+
+        if (num1 > 10 || num2 > 10 || num1 > 0 || num2 > 0) {
+            alert('Digite um número válido!')
+        } else if (media > 4 && num1 > 0 && num2 > 0) {
+            alert(`Aprovado! Sua média é ${media}`)
+        }else if (media <= 2.9) {
+            alert(`Reprovado! Sua média é ${media}`)
+        }  else if (media <= 4 && num1 != 0 && num2 != 0) {
+            alert(`Recuperação! Sua média é ${media}`)
+        } else {
+            alert('Digite um número válido!')
+        }
+
+    </script>
+</body>
+
+</html>   
